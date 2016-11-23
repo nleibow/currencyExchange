@@ -7,7 +7,7 @@ $('#search').click(function(event){
 	var getStock = $.ajax({
 
 		method: "GET",
-		url: "http://globalcurrencies.xignite.com/xGlobalCurrencies.json/ConvertRealTimeValue?From=" + $startCur + "&To="+ $endCur + "&Amount=" + $amount,
+		url: "https://globalcurrencies.xignite.com/xGlobalCurrencies.json/ConvertRealTimeValue?From=" + $startCur + "&To="+ $endCur + "&Amount=" + $amount,
 	}).done(function(){
 		console.log(getStock);
 	})});
